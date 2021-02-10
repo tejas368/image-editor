@@ -1,26 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import {  } from "react-image-";
-
+import React from "react";
+import "./index.css";
+import TopBar from "./TopBar";
+// eslint-disable-next-line
+import { Router, Route, Link } from "react-router-dom";
+import { createBrowserHistory as createHistory } from "history";
+import HomePage from "./HomePage.js";
+const history = createHistory();
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router history={history}>
+        <TopBar/>
+        <Route
+          path="/"
+          exact
+          component={HomePage}
+        />
+      </Router>
     </div>
   );
 }
-
 export default App;

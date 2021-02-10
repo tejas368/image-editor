@@ -1,0 +1,25 @@
+
+/* Styling of button */
+
+.button {
+    background-color: black;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0.5rem 0.3rem 0.7rem grey;
+}
+
+.button:hover{
+    background-color: grey;
+    border-color: none;
+}
+
+@media (max-width: 800px) {
+   h1{
+       font-size: 2rem;
+   }
+
+   .button {
+       width: 10rem;
+       font-size: 0.8rem;
+   }
+}

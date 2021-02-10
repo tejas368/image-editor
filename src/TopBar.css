@@ -1,0 +1,18 @@
+nav {
+    background-color: rgb(40, 77, 0)!important;
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 800px){
+    .navtitle{
+        font-size: 1rem;
+    }
+
+    .navbar{
+        font-size: 70%;
+    }
+
+    .home{
+        font-size: 0.8rem;
+    }
+}
