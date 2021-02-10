@@ -4,7 +4,7 @@ import TopBar from "./TopBar";
 // eslint-disable-next-line
 import { Router, Route, Link } from "react-router-dom";
 import { createBrowserHistory as createHistory } from "history";
-import HomePage from "./HomePage.js";
+import CreatingTask from "./HomePage.js";
 const history = createHistory();
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route
           path="/"
           exact
-          component={HomePage}
+          component={CreatingTask}
         />
       </Router>
     </div>

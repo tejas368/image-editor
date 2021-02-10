@@ -9,7 +9,7 @@ import myTheme from "./Themes";
 
 const download = require("downloadjs");
 
-function HomePage() {
+function CreatingTask() {
   const [imageSrc, setImageSrc] = useState("");
   const imageEditor = React.createRef();
   const saveImageToDisk = () => {
@@ -53,4 +53,4 @@ function HomePage() {
     </div>
   );
 }
-export default HomePage;
+export default CreatingTask;
