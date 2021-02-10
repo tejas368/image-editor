@@ -10,6 +10,7 @@ import myTheme from "./Themes";
 const download = require("downloadjs");
 
 function CreatingTask() {
+// eslint-disable-next-line
   const [imageSrc, setImageSrc] = useState("");
   const imageEditor = React.createRef();
   const saveImageToDisk = () => {
